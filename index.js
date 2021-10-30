@@ -34,10 +34,14 @@ async function run() {
     }
 
 }
+
 run().catch(console.dir);
 
 app.get('/', (req, res) => {
     res.send("server is running")
+})
+app.get('/hello', (req, res) => {
+    res.send("Updated services should be here")
 })
 
 app.listen(port, () => {
