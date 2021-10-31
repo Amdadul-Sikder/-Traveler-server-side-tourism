@@ -33,9 +33,22 @@ async function run() {
         // await client.close()
     }
 
-}
+
+
+};
 
 run().catch(console.dir);
+
+
+
+
+// add order product
+
+app.post("/addOrder", (req, res) => {
+    console.log(req.body);
+})
+
+
 
 app.get('/', (req, res) => {
     res.send("server is running")
